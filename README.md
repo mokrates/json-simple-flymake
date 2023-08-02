@@ -3,8 +3,11 @@ flymake mode for json using emacs' builtin json-parse-buffer
 
 ## install ##
 
-Throw `json-simple-flymake.el` into your `~/.emacs.d/` and add `(load
-"~/.emacs.d/json-simple-flymake.el")` at the end of your `~/.emacs`.
+Throw `json-simple-flymake.el` into your `~/.emacs.d/` and add 
+
+    (load "~/.emacs.d/json-simple-flymake.el")
+	
+at the end of your `~/.emacs`.
 
 ## Customize ##
 
