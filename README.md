@@ -16,6 +16,6 @@ at the end of your `~/.emacs`.
 ## Limitations ##
 
 only ever marks but one error, because we use json-parse-buffer, which
-doesn't to more. But hey, more than nothing for a devop who want's to
+doesn't do more. But hey, more than nothing for a devop who want's to
 edit some json configs and not install a zillion jiggabytes of npm
 madness for jsonlint, right?
