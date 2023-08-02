@@ -10,7 +10,11 @@
     (goto-char (point-min)) 
     (condition-case err
 	(json-parse-buffer)
-      ((json-parse-error json-end-of-file)
+      ((json-end-of-file
+	json-error
+	json-object-too-deep
+	json-out-of-memory
+	json-parse-error)
        (let ((fly-regn (flymake-diag-region (current-buffer) (nth 3 err) (nth 4 err))))
 	 (list (flymake-make-diagnostic (current-buffer) (car fly-regn) (cdr fly-regn) :error (nth 1 err)))))
       (:success ())))))
