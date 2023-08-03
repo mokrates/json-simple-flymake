@@ -20,6 +20,7 @@
       (:success ())))))
 
 (defun json-simple-setup-flymake-backend ()
+  (make-variable-buffer-local 'flymake-diagnostic-functions)  
   (add-hook 'flymake-diagnostic-functions 'json-simple-flymake)
 
   (when json-simple-flymake--enable-help
