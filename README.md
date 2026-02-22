@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> this moved to codeberg.org/mokrates/json-simple-flymake
+
 # json-simple-flymake
 flymake mode for json using emacs' builtin json-parse-buffer
 
